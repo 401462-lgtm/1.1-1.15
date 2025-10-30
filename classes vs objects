@@ -1,0 +1,82 @@
+--------------------Rectangle.java-----------------------
+public class Rectangle 
+{
+    private int width;      -----how wide it will be
+    private int height;     -----  how tall  
+    private String color;   ----- color like red
+
+
+--- this will be how to make the new rectange vvv
+    public Rectangle(int w, int h, String c)
+    {
+        width = w;
+        height = h;
+        color = c;
+    }
+------these will get values
+    public int getWidth()   
+    {
+        return width;
+    }
+
+    public int getHeight()
+    {
+        return height;
+    }
+   -- color 
+    public String getColor()
+    {
+        return color;
+    }
+-------- with x hight
+    public int calcArea() 
+    {
+        return width * height;
+    }
+
+    public int calcPerimeter()
+    {
+        return 2 * width + 2 * height;
+    }
+------ shows what you want to print
+    public String toString()
+    {
+        return "A rectangle with a width of " + width + ", a height of " + height + ", and a color of " + color + "\n";
+    }
+}
+------------------ RectangleRunner.java ---------------------
+public class RectangleRunner
+{
+    public static void main(String[] args)
+    {
+        --------this will make 4 rectanges using the blueprint
+        Rectangle rect1 = new Rectangle(5, 8, "yellow");
+        Rectangle rect2 = new Rectangle(2, 10, "blue");
+        Rectangle rect3 = new Rectangle(10, 3, "violet");
+        Rectangle rect4 = new Rectangle(7, 4, "red");
+
+    ----- this will print them to String() and runs automaticly
+        System.out.println(rect1);
+        System.out.println(rect2);
+        System.out.println(rect3);
+        System.out.println(rect4);
+    }
+}
+------------------- invesigate ------------
+havent done vvv
+
+1. Which class is being used as a blueprint to create
+rectangle objects? How do you know?
+
+2. What are the names of the object attributes that 
+are outlined in the blueprint class?
+
+3. What value does the `width` attribute have in the
+`Rectangle` class on line 4? Why? How does this relate
+to the process of creating rectangle objects (lines 
+6-8 in `RectangleRunner`)?
+
+
+4. In summary, what is the difference between a class
+and the objects it creates?
+
