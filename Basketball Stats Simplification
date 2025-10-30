@@ -1,0 +1,39 @@
+----------------BasketballStatsTracker----------------
+public class BasketballStatsTracker
+{
+    public static void main(String[] args)
+    {
+        int totalPoints = 0;      ----- start at 0
+        int shotsMade = 0;        ----- good shots
+        int shotsMissed = 0;      ----- missed shots
+        
+        int twoPointer = 2;       ----- worth 2
+        int threePointer = 3;     ---- worth 3
+        int freeThrow = 1;        ----- worth 1
+        
+        ----- makes a two-pointer
+        totalPoints += twoPointer;   ----- +2
+        shotsMade += 1;              ----- made it
+        
+        ---- makes a three-pointer
+        totalPoints += threePointer; --- +3
+        shotsMade += 1;              ----- swish
+        
+        ----- misses a shot
+        shotsMissed += 1;            ----- oof
+        
+        -- makes two free throws
+        totalPoints += freeThrow;    ----- +1
+        totalPoints += freeThrow;    ----- +1 again
+        shotsMade += 2;              ----- both in
+        
+        ----- misses another shot
+        shotsMissed += 1;            ----- airball
+        
+        ---- print the score
+        System.out.print("Total points scored: ");
+        System.out.println(totalPoints);   ---- should be 9
+        System.out.print("Total shots attempted: ");
+        System.out.println(shotsMade);     --- only made shots wait
+    }
+}
