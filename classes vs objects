@@ -80,3 +80,13 @@ to the process of creating rectangle objects (lines
 4. In summary, what is the difference between a class
 and the objects it creates?
 
+
+
+
+
+
+---------end print---------
+A rectangle with a width of 5, a height of 8, and a color of yellow
+A rectangle with a width of 2, a height of 10, and a color of blue
+A rectangle with a width of 10, a height of 3, and a color of violet
+A rectangle with a width of 7, a height of 4, and a color of red
